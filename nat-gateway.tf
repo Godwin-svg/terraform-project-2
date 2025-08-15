@@ -87,7 +87,7 @@ resource "aws_route_table_association" "route_table_association_private_app_subn
 
 # route table association of private app subnet AZ1b 
 resource "aws_route_table_association" "route_table_association_private_app_subnet_AZ1b" {
-  route_table_id = aws_route_table.private_app_rt_az1b.id 
+  route_table_id = aws_route_table.private_app_rt_az1b.id
   subnet_id      = aws_subnet.private_app_subnet_azlb.id
 }
 

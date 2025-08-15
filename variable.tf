@@ -47,3 +47,11 @@ variable "default_cidr" {
   description = "Allows traffic from the internet"
 
 }
+
+# security group variable
+variable "ssh_location" {
+  default     = "0.0.0.0/0"
+  description = "the ip address that can ssh into the ec2"
+  type        = string
+
+}
