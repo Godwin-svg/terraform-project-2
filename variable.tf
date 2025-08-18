@@ -69,3 +69,31 @@ variable "opearator_email" {
   description = "eneter a valid email address"
   type        = string
 }
+
+# auto scaling group variables
+variable "launch_template_name" {
+  default     = "dev-launch-template"
+  description = "name of the launch template"
+  type        = string
+}
+
+# create ami id
+variable "ami_id" {
+  default = "ami-0de716d6197524dd9"
+  type = string
+  description = "ec2 ami ID"
+  
+}
+
+variable "ec2_key_pair_name" {
+  default = "classof25"
+  type = string
+  description = "ec2 key pair name"
+  
+}
+
+
+
+
+
+
