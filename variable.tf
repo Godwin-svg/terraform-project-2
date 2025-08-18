@@ -61,3 +61,11 @@ variable "ssl_certificate_arn" {
   description = "ssl certificate arn"
   type        = string
 }
+
+# sns topi variables
+# application load balancer variables
+variable "opearator_email" {
+  default     = "innocentgodwin580@yahoo.com"
+  description = "eneter a valid email address"
+  type        = string
+}
