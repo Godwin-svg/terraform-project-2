@@ -53,5 +53,11 @@ variable "ssh_location" {
   default     = "0.0.0.0/0"
   description = "the ip address that can ssh into the ec2"
   type        = string
+}
 
+# application load balancer variables
+variable "ssl_certificate_arn" {
+  default     = "arn:aws:acm:us-east-1:058264237826:certificate/f6656251-d710-492c-8772-feb6d529cc8f"
+  description = "ssl certificate arn"
+  type        = string
 }

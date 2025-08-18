@@ -100,6 +100,7 @@ resource "aws_db_instance" "my_db" {
 }
 
 
+# Create application load balancer
 
 
 
